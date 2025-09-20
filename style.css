@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+body {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 320px;
+    border-radius: 15px;
+    box-shadow: 0px 25px 40px -20px hsl(216, 15%, 48%);
+    text-align: center;
+    padding: 20px;
+    height: 499px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.card h1{
+    font-size: 22px;
+    color: hsl(218, 44%, 22%);
+    margin-bottom: 15px;
+}
+.card p{
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+}
+.attribution {
+    font-size: 11px;
+    text-align: bottom;
+    margin-top: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.attribution a:hover {
+    color: hsl(228, 45%, 64%);
+}
+@media screen and (max-width: 375px) {
+    .card {
+        width: 100%;
+        height: auto;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+    .card img {
+        height: auto;
+    }
+    .card h1 {
+        font-size: 18px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .card {
+        width: 80%;
+        height: auto;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+    .card img {
+        height: auto;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1441px) {
+    body {
+        height: 100%;
+        padding: 20px 0;
+    }
+    .attribution {
+        font-size: 10px;
+    }
+    .card {
+        height: auto;
+    }
+    .card img {
+        height: auto;
+    }
+    .card h1 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 14px;
+    }
+}
